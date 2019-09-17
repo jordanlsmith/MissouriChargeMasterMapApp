@@ -1,0 +1,57 @@
+"HospitalName","Price","Zip","City","StaffedBeds","GrossPatientRevenue","long","lat","Item","medianIncome","totalPopulation","totalInsured","percentInsured"
+"Black River Medical Center",1.25,63901,"Poplar Bluff",8,75547,-90.4565967,36.7707546,"Acetamenophin (325mg Tablet)",32819,17112,9537,55.7328190743338
+"Bothwell Regional Health Center",2,65301,"Sedalia",122,315040,-93.22264,38.699062,"Acetamenophin (325mg Tablet)",35096,21477,12569,58.5230711924384
+"Citizens Memorial Hospital",2.5,65613,"Bolivar",72,378182,-93.42094,37.626537,"Acetamenophin (325mg Tablet)",39900,10654,6017,56.4764407734184
+"Liberty Hospital",1,64068,"Liberty",207,629356,-94.42488,39.276436,"Acetamenophin (325mg Tablet)",70066,30602,17993,58.7968106659695
+"Mosaic Life Care at Saint Joseph - Medical Center",0.25,64506,"St. Joseph",352,1235235,-94.77176,39.770138,"Acetamenophin (325mg Tablet)",45762,76819,44329,57.7057759148127
+"North Kansas City Hospital",0,64116,"North Kansas City",413,1716388,-94.55008,39.14959,"Acetamenophin (325mg Tablet)",42329,4371,2953,67.5589110043468
+"Poplar Bluff Regional Medical Center - Oak Grove",1,63901,"Poplar Bluff",221,1367325,-90.443287,36.788987,"Acetamenophin (325mg Tablet)",32819,17112,9537,55.7328190743338
+"Southeast Health Center of Stoddard County",3,63841,"Dexter",48,67288,-89.9701,36.806152,"Acetamenophin (325mg Tablet)",33813,7887,4488,56.9037656903766
+"Saint Luke's East Hospital",0.13,64086,"Lee's Summit",184,1230676,-94.38195,38.94175,"Acetamenophin (325mg Tablet)",83601,95270,54898,57.6235960953081
+"Saint Luke's Hospital",0.13,63017,"Chesterfield",462,1511123,-90.50342,38.6515,"Acetamenophin (325mg Tablet)",99848,47660,25525,53.5564414603441
+"Capital Region Medical Center",0.0142,65101,"Jefferson City",114,502476,-92.18203,38.56665,"Acetamenophin (325mg Tablet)",48132,43092,23670,54.9289891395155
+"University of Missouri Hospital",0.37,65212,"Columbia",587,2595460,-92.3273683,38.9381449,"Acetamenophin (325mg Tablet)",47236,118620,81358,68.5870848086326
+"Pemiscot Memorial Health System",8,63851,"Hayti",167,74792,-89.74066,36.236813,"Acetamenophin (325mg Tablet)",23438,2766,1446,52.2776572668113
+"Saint Francis Medical Center",0.53,63703,"Cape Girardeau",302,1955417,-89.57125,37.30357,"Acetamenophin (325mg Tablet)",42078,39092,24488,62.6419727821549
+"Texas County Memorial Hospital",2,65483,"Houston",47,74237,-91.95923,37.317314,"Acetamenophin (325mg Tablet)",26496,2428,1145,47.158154859967
+"Bothwell Regional Health Center",130,65301,"Sedalia",122,315040,-93.22264,38.699062,"Complete Blood Count with Auto Differential",35096,21477,12569,58.5230711924384
+"Citizens Memorial Hospital",90.25,65613,"Bolivar",72,378182,-93.42094,37.626537,"Complete Blood Count with Auto Differential",39900,10654,6017,56.4764407734184
+"Liberty Hospital",109,64068,"Liberty",207,629356,-94.42488,39.276436,"Complete Blood Count with Auto Differential",70066,30602,17993,58.7968106659695
+"Moberly Regional Medical Center",113,65270,"Moberly",56,223976,-92.414085,39.423843,"Complete Blood Count with Auto Differential",37023,13775,6966,50.5698729582577
+"Mosaic Life Care at Saint Joseph - Medical Center",79,64506,"St. Joseph",352,1235235,-94.77176,39.770138,"Complete Blood Count with Auto Differential",45762,76819,44329,57.7057759148127
+"North Kansas City Hospital",136,64116,"North Kansas City",413,1716388,-94.55008,39.14959,"Complete Blood Count with Auto Differential",42329,4371,2953,67.5589110043468
+"Northeast Regional Medical Center",179,63501,"Kirksville",73,320798,-92.59086,40.19272,"Complete Blood Count with Auto Differential",27667,17519,11499,65.6373080655289
+"Poplar Bluff Regional Medical Center - Oak Grove",53.93,63901,"Poplar Bluff",221,1367325,-90.443287,36.788987,"Complete Blood Count with Auto Differential",32819,17112,9537,55.7328190743338
+"Southeast Hospital",216.99,63701,"Cape Girardeau",222,1083546,-89.54289,37.311756,"Complete Blood Count with Auto Differential",42078,39092,24488,62.6419727821549
+"Saint Luke's Des Peres Hospital",256,63122,"St. Louis",88,478258,-90.44815,38.58157,"Complete Blood Count with Auto Differential",38664,314867,207106,65.7757084737365
+"Saint Luke's East Hospital",366,64086,"Lee's Summit",184,1230676,-94.38195,38.94175,"Complete Blood Count with Auto Differential",83601,95270,54898,57.6235960953081
+"Saint Luke's Hospital",366,63017,"Chesterfield",462,1511123,-90.50342,38.6515,"Complete Blood Count with Auto Differential",99848,47660,25525,53.5564414603441
+"Capital Region Medical Center",62,65101,"Jefferson City",114,502476,-92.18203,38.56665,"Complete Blood Count with Auto Differential",48132,43092,23670,54.9289891395155
+"University of Missouri Hospital",49.4,65212,"Columbia",587,2595460,-92.3273683,38.9381449,"Complete Blood Count with Auto Differential",47236,118620,81358,68.5870848086326
+"Ozarks Medical Center",31,65775,"West Plains",103,406891,-91.87558,36.738,"Complete Blood Count with Auto Differential",34456,12218,6585,53.8958913079064
+"Pemiscot Memorial Health System",24.5,63851,"Hayti",167,74792,-89.74066,36.236813,"Complete Blood Count with Auto Differential",23438,2766,1446,52.2776572668113
+"Saint Francis Medical Center",125,63703,"Cape Girardeau",302,1955417,-89.57125,37.30357,"Complete Blood Count with Auto Differential",42078,39092,24488,62.6419727821549
+"Texas County Memorial Hospital",52,65483,"Houston",47,74237,-91.95923,37.317314,"Complete Blood Count with Auto Differential",26496,2428,1145,47.158154859967
+"Truman Medical Center Hospital Hill",197.84,64108,"Kansas City",238,694159,-94.575775,39.085087,"Complete Blood Count with Auto Differential",50136,476974,299793,62.8531114903538
+"Western Missouri Medical Center",153.3,64093,"Warrensburg",69,238610,-93.72374,38.765457,"Complete Blood Count with Auto Differential",40483,19890,13281,66.7722473604827
+"Bothwell Regional Health Center",1147,65301,"Sedalia",122,315040,-93.22264,38.699062,"Private Room (Medical/Surgical Unit)",35096,21477,12569,58.5230711924384
+"Citizens Memorial Hospital",885,65613,"Bolivar",72,378182,-93.42094,37.626537,"Private Room (Medical/Surgical Unit)",39900,10654,6017,56.4764407734184
+"Liberty Hospital",1295,64068,"Liberty",207,629356,-94.42488,39.276436,"Private Room (Medical/Surgical Unit)",70066,30602,17993,58.7968106659695
+"Mosaic Life Care at Saint Joseph - Medical Center",881,64506,"St. Joseph",352,1235235,-94.77176,39.770138,"Private Room (Medical/Surgical Unit)",45762,76819,44329,57.7057759148127
+"North Kansas City Hospital",2103,64116,"North Kansas City",413,1716388,-94.55008,39.14959,"Private Room (Medical/Surgical Unit)",42329,4371,2953,67.5589110043468
+"Poplar Bluff Regional Medical Center - Oak Grove",1603.95,63901,"Poplar Bluff",221,1367325,-90.443287,36.788987,"Private Room (Medical/Surgical Unit)",32819,17112,9537,55.7328190743338
+"Southeast Hospital",609.41,63701,"Cape Girardeau",222,1083546,-89.54289,37.311756,"Private Room (Medical/Surgical Unit)",42078,39092,24488,62.6419727821549
+"Saint Luke's Des Peres Hospital",2476,63122,"St. Louis",88,478258,-90.44815,38.58157,"Private Room (Medical/Surgical Unit)",38664,314867,207106,65.7757084737365
+"Capital Region Medical Center",1147,65101,"Jefferson City",114,502476,-92.18203,38.56665,"Private Room (Medical/Surgical Unit)",48132,43092,23670,54.9289891395155
+"University of Missouri Hospital",1756,65212,"Columbia",587,2595460,-92.3273683,38.9381449,"Private Room (Medical/Surgical Unit)",47236,118620,81358,68.5870848086326
+"Ozarks Medical Center",1104,65775,"West Plains",103,406891,-91.87558,36.738,"Private Room (Medical/Surgical Unit)",34456,12218,6585,53.8958913079064
+"Saint Francis Medical Center",1373,63703,"Cape Girardeau",302,1955417,-89.57125,37.30357,"Private Room (Medical/Surgical Unit)",42078,39092,24488,62.6419727821549
+"Bothwell Regional Health Center",30,65301,"Sedalia",122,315040,-93.22264,38.699062,"Normal Saline (for IV)",35096,21477,12569,58.5230711924384
+"Citizens Memorial Hospital",10,65613,"Bolivar",72,378182,-93.42094,37.626537,"Normal Saline (for IV)",39900,10654,6017,56.4764407734184
+"Liberty Hospital",12,64068,"Liberty",207,629356,-94.42488,39.276436,"Normal Saline (for IV)",70066,30602,17993,58.7968106659695
+"Mosaic Life Care at Saint Joseph - Medical Center",23,64506,"St. Joseph",352,1235235,-94.77176,39.770138,"Normal Saline (for IV)",45762,76819,44329,57.7057759148127
+"Northeast Regional Medical Center",35,63501,"Kirksville",73,320798,-92.59086,40.19272,"Normal Saline (for IV)",27667,17519,11499,65.6373080655289
+"Southeast Hospital",34.71,63701,"Cape Girardeau",222,1083546,-89.54289,37.311756,"Normal Saline (for IV)",42078,39092,24488,62.6419727821549
+"Pemiscot Memorial Health System",34.5,63851,"Hayti",167,74792,-89.74066,36.236813,"Normal Saline (for IV)",23438,2766,1446,52.2776572668113
+"Saint Francis Medical Center",40,63703,"Cape Girardeau",302,1955417,-89.57125,37.30357,"Normal Saline (for IV)",42078,39092,24488,62.6419727821549
+"Texas County Memorial Hospital",30,65483,"Houston",47,74237,-91.95923,37.317314,"Normal Saline (for IV)",26496,2428,1145,47.158154859967

@@ -1,0 +1,134 @@
+"HospitalName","Description","Price","Address","Zip","City","StaffedBeds","TotalDischarges","PatientDays","GrossPatientRevenue","long","lat"
+"Black River Medical Center","ACETAMINOPHEN TAB 325MG  100",1.25,"217 Physicians Park Drive, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",8,407,1269,75547,-90.4565967,36.7707546
+"Black River Medical Center","ACETAMINOPHEN WITH COD TAB 300/30MG",1.25,"217 Physicians Park Drive, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",8,407,1269,75547,-90.4565967,36.7707546
+"Bothwell Regional Health Center","TYLENOL W/CODEINE #3 TABL",4,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","TYLENOL EX-STR 500MG CAPL",2,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","TYLENOL 325MG TABLET",2,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Citizens Memorial Hospital","acetaminophen/codeine 300/30 mg TABLET",3.05,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Citizens Memorial Hospital","acetaminophen/codeine 300/60 mg TABLET",4.91,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Citizens Memorial Hospital","acetaminophen ER 650 MG TABLET",2.5,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Citizens Memorial Hospital","acetaminophen 500 MG GELCAP",2.5,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Liberty Hospital","ACETAMINOPHEN 80MG TAB",1,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","ACETAMINOPHEN 325MG TAB",1,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","ACETAMINOPHEN 500MG TAB",1,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","TYLENOL #3 TAB",1,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Mosaic Life Care at Saint Joseph - Medical Center","TYLENOL 325MG TAB",0.25,"5325 Faraon Street, Saint Joseph, MO, 64506",64506,"Saint Joseph",352,NA,70520,1235235,-94.77176,39.770138
+"Mosaic Life Care at Saint Joseph - Medical Center","ACETAMINOPHEN 500 MG TAB",0.25,"5325 Faraon Street, Saint Joseph, MO, 64506",64506,"Saint Joseph",352,NA,70520,1235235,-94.77176,39.770138
+"North Kansas City Hospital","Acetaminophen 500mg Tab",0,"2800 Clay Edwards Drive, North Kansas City, MO, 64116",64116,"North Kansas City",413,NA,88996,1716388,-94.55008,39.14959
+"Poplar Bluff Regional Medical Center - Oak Grove","ACETAMINOPHEN 325MG TAB       ",1,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","ACETAMINOPHEN 500MG TAB       ",1,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","TYLENOL W/COD #3 TAB          ",32.87,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Southeast Health Center of Stoddard County","TYLENOL 325MG TABLET",3,"1200 N 1 Mile Rd, Dexter, MO, 63841",63841,"Dexter",48,817,2153,67288,-89.9701,36.806152
+"Southeast Health Center of Stoddard County","TYLENOL 500MG TABLET",2,"1200 N 1 Mile Rd, Dexter, MO, 63841",63841,"Dexter",48,817,2153,67288,-89.9701,36.806152
+"Southeast Health Center of Stoddard County","OXYCODONE/ACETAMINOPHEN 10/325MG TAB",7,"1200 N 1 Mile Rd, Dexter, MO, 63841",63841,"Dexter",48,817,2153,67288,-89.9701,36.806152
+"Saint Luke's East Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",11.54,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",11.53,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",12.75,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",19.08,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",7,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET",10.65,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET",10.67,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",41.93,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",42,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",49.62,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",49.62,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",11.09,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","BUTALBITAL-ACETAMINOPHEN-CAFFEINE 50 MG-325 MG-40 MG TABLET",7.52,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","MAPAP (ACETAMINOPHEN) 325 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",9.85,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",8.94,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","TYLENOL EXTRA STRENGTH 500 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","TYLENOL EXTRA STRENGTH 500 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","TYLENOL EXTRA STRENGTH 500 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","TYLENOL 325 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",8.33,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",9.54,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",10.05,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","ACETAMINOPHEN 325 MG TABLET",0.13,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET",10.24,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",12.02,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",12.06,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","BUTALBITAL-ACETAMINOPHEN-CAFFEINE 50 MG-325 MG-40 MG TABLET",24.6,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",37.34,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",44.56,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET",7,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",14.08,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",23.55,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",13.9,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",11.55,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",12.75,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",8.93,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",4.22,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",11.09,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","MAPAP (ACETAMINOPHEN) 325 MG TABLET",0.13,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","MAPAP (ACETAMINOPHEN) 325 MG TABLET",0.13,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",9.84,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",11.6,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","TYLENOL EXTRA STRENGTH 500 MG TABLET",0.14,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","TYLENOL 325 MG TABLET",0.13,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",5.64,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","ACETAMINOPHEN 325 MG TABLET",0.13,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",11.95,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET",10.25,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",9.78,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",37.35,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","BUTALBITAL-ACETAMINOPHEN-CAFFEINE 50 MG-325 MG-40 MG TABLET",22.8,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",37.34,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",37.28,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",45.04,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",45.01,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET",7,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",14.1,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",14.1,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",23.52,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",13.9,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Capital Region Medical Center","Y    ACETAMINOPHEN 325 MG TAB",0.0142,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"Capital Region Medical Center","Y    ACETAMINOPHEN 500 MG TAB",0.03,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"University of Missouri Hospital","ACETAMINOPHEN 325 MG TABLET",0.37,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","ACETAMINOPHEN 80 MG CHEWABLE TABLET",0.37,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","ACETAMINOPHEN/DICHLORAL/ISOMETHEPTENE CAPSULE",31.88,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","CODEINE 30 MG/ACETAMINOPHEN 300 MG TABLET",3.85,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","HYDROCODONE 10 MG/ACETAMINOPHEN 325 MG TABLET",3.39,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","HYDROCODONE 5 MG/ACETAMINOPHEN 325 MG TABLET",3.39,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","HYDROCODONE 7.5 MG/ACETAMINOPHEN 325 MG TABLET",3.39,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","OXYCODONE 5 MG/ACETAMINOPHEN 325 MG TABLET",3.39,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"Pemiscot Memorial Health System","HYDROCODONE/ACETAMINOPHEN 10MG/500MG TAB",8,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Pemiscot Memorial Health System","TYLENOL #3-TAB",8,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Pemiscot Memorial Health System","TYLENOL 325MG TAB",8,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Pemiscot Memorial Health System","TYLENOL ES 500MG CAP",8,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Saint Francis Medical Center","ACETAMINOPHEN 300 MG-CODEINE 30 MG TABLET",40.13,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 300 MG-CODEINE 60 MG TABLET",40.27,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 300 MG-CODEINE 60 MG TABLET",40.52,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 325 MG TABLET",0.53,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 500 MG TABLET",0.52,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 500 MG TABLET",0.53,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN 80 MG DISINTEGRATING TABLET",0.54,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","ACETAMINOPHEN ER 650 MG TABLET,EXTENDED RELEASE",0.56,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","BUTALBITAL-ACETAMINOPHEN-CAFFEINE 50 MG-325 MG-40 MG TABLET",33.55,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","BUTALBITAL-ACETAMINOPHEN-CAFFEINE 50 MG-325 MG-40 MG TABLET",33.63,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",40.31,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET",40.34,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 10 MG-ACETAMINOPHEN 325 MG TABLET (FOR SINGLE SHOT EPIDURAL POST OP)",40.31,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",40.18,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 5 MG-ACETAMINOPHEN 325 MG TABLET",40.3,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HYDROCODONE 7.5 MG-ACETAMINOPHEN 325 MG TABLET",40.29,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",74.19,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET",74.68,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 10 MG-325 MG TABLET (FOR SINGLE SHOT EPIDURAL POST OP)",74.68,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET",74.21,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 5 MG-325 MG TABLET (FOR SINGLE SHOT EPIDURAL POST OP)",74.21,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","OXYCODONE-ACETAMINOPHEN 7.5 MG-325 MG TABLET",74.86,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET",40.19,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET",40.22,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TRAMADOL 37.5 MG-ACETAMINOPHEN 325 MG TABLET",40.56,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TYLENOL #3 / ACETAMINOPHEN/CODEINE 300-30MG TABLET",1.164,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TYLENOL / ACETAMINOPHEN 325MG TABLET",0.36375,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","TYLENOL / ACETAMINOPHEN 500MG TABLET",0.4074,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Texas County Memorial Hospital","ACETAMINOPHEN 325MG TAB [TYLENOL]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","// TYLENOL (ACETAMINOPHEN) TAB 500 MG",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","ACETAMINOPH/COD 300/30MG TAB [TYLENOL#3]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","// ACETAMINOPHEN 500MG TAB [100CT]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","// ACETAMINOPHEN 325MG TAB [100CT]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","// ACETAMINOPHEN 500MG TAB [500CT]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","// ACETAMINOPHEN 500MG TAB [1000CT]",28.77,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","ACETAMINOPHEN 500MG TAB [TYLENOL]",2,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314

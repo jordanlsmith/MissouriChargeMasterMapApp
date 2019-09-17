@@ -1,0 +1,13 @@
+name: MissouriPricingDataProject
+title: MissouriPricingDataProject
+username:
+account: jordanlsmith
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 774502
+bundleId: 1935607
+url: https://jordanlsmith.shinyapps.io/MissouriPricingDataProject/
+when: 1552456952.4925
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: LeafletMapPrepforShinyApp.nb.html|LeafletMapPrepforShinyApp.Rmd

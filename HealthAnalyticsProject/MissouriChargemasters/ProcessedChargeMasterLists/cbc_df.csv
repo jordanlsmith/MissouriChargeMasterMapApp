@@ -1,0 +1,125 @@
+"HospitalName","Description","Price","Address","Zip","City","StaffedBeds","TotalDischarges","PatientDays","GrossPatientRevenue","long","lat"
+"Bothwell Regional Health Center","CSR-CBC 1/8 CONSTAVAC",435,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","L-CBC W/ MANUAL DIFF",NA,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","L-CBC W/ AUTO DIFFERENTIAL",130,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","L-EMP CBC W/AUTO",21,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","L-AUTO COLLECT FEE - CBC",580,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Bothwell Regional Health Center","L-DIRECTED COLLECT FEE-CBC",510,"601 East 14th Street, Sedalia, MO, 65301",65301,"Sedalia",122,NA,15954,315040,-93.22264,38.699062
+"Citizens Memorial Hospital","Cbc With Auto Diff",90.25,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Citizens Memorial Hospital","Cbc W/Manual Diff          R",222.25,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Citizens Memorial Hospital","Platelets Hla-Lr Ea Unit Cbco",1637.75,"1500 North Oakland Avenue, Bolivar, MO, 65613",65613,"Bolivar",72,NA,8966,378182,-93.42094,37.626537
+"Liberty Hospital","CBC MANUAL DIFF",64,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","CBC WITH AUTOMATED DIFF",109,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","LAB COMPL CBC W PLT W AUT",109,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Liberty Hospital","HEMAGRAM CBC NO DIFF",128,"2525 Glenn Hendren Drive, Liberty, MO, 64068",64068,"Liberty",207,NA,32034,629356,-94.42488,39.276436
+"Moberly Regional Medical Center","CBC W-PLT AUTO COMPD",113,"1515 Union Avenue, Moberly, MO, 65270",65270,"Moberly",56,985,2925,223976,-92.414085,39.423843
+"Moberly Regional Medical Center","CBC W-PLT           ",100,"1515 Union Avenue, Moberly, MO, 65270",65270,"Moberly",56,985,2925,223976,-92.414085,39.423843
+"Moberly Regional Medical Center","CBC-PLT AUTORP CDM  ",173,"1515 Union Avenue, Moberly, MO, 65270",65270,"Moberly",56,985,2925,223976,-92.414085,39.423843
+"Mosaic Life Care at Saint Joseph - Medical Center","CBC W/ DIFF",79,"5325 Faraon Street, Saint Joseph, MO, 64506",64506,"Saint Joseph",352,NA,70520,1235235,-94.77176,39.770138
+"Mosaic Life Care at Saint Joseph - Medical Center","CBC W/OUT DIFF",76,"5325 Faraon Street, Saint Joseph, MO, 64506",64506,"Saint Joseph",352,NA,70520,1235235,-94.77176,39.770138
+"North Kansas City Hospital","Cbc With Differential",136,"2800 Clay Edwards Drive, North Kansas City, MO, 64116",64116,"North Kansas City",413,NA,88996,1716388,-94.55008,39.14959
+"North Kansas City Hospital","Hea Panel Add On Cbc",256,"2800 Clay Edwards Drive, North Kansas City, MO, 64116",64116,"North Kansas City",413,NA,88996,1716388,-94.55008,39.14959
+"North Kansas City Hospital","Hea Standalone Cbc",374,"2800 Clay Edwards Drive, North Kansas City, MO, 64116",64116,"North Kansas City",413,NA,88996,1716388,-94.55008,39.14959
+"Northeast Regional Medical Center","CBC W-PLT AUTO COMPD",179,"315 South Osteopathy, Kirksville, MO, 63501",63501,"Kirksville",73,NA,9047,320798,-92.59086,40.19272
+"Northeast Regional Medical Center","CBC W-PLT           ",215.25,"315 South Osteopathy, Kirksville, MO, 63501",63501,"Kirksville",73,NA,9047,320798,-92.59086,40.19272
+"Northeast Regional Medical Center","CBC-PLT AUTORP CDM  ",155,"315 South Osteopathy, Kirksville, MO, 63501",63501,"Kirksville",73,NA,9047,320798,-92.59086,40.19272
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT           ",370.95,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC-PLT AUTORP CDM  ",153.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",548.34,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",53.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",53.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",53.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",53.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Poplar Bluff Regional Medical Center - Oak Grove","CBC W-PLT AUTO COMPD",53.93,"3100 Oak Grove Rd, Poplar Bluff, MO, 63901",63901,"Poplar Bluff",221,NA,43116,1367325,-90.443287,36.788987
+"Southeast Hospital","85010 - Cbc With Diff 85010",216.99,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","84685 - Cbc W/O Diff",162.94,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","85023-A - Complete Cbc 85023-A",177.82,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","Cbc With Manual Differential",256.88,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","Vcbc  Veterinary",21.93,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","Veterinary Panel Without Cbc",43.44,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","VCBC Veterinary  82190-A",21.93,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Hospital","Veterinary Panel Without CBC  82190-B",43.44,"1701 Lacey Street, Cape Girardeau, MO, 63701",63701,"Cape Girardeau",222,NA,37700,1083546,-89.54289,37.311756
+"Southeast Health Center of Stoddard County",".CBC AUTO DIFF CHARGE ONLY NO RESULTS",123,"1200 N 1 Mile Rd, Dexter, MO, 63841",63841,"Dexter",48,817,2153,67288,-89.9701,36.806152
+"Saint Luke's Des Peres Hospital","CBC PLT AUTO DIFF 5",256,"2345 Dougherty Ferry Rd, St. Louis, MO, 63122",63122,"Saint Louis",88,NA,13879,478258,-90.44815,38.58157
+"Saint Luke's Des Peres Hospital","CBC WITHOUT DIFF",157,"2345 Dougherty Ferry Rd, St. Louis, MO, 63122",63122,"Saint Louis",88,NA,13879,478258,-90.44815,38.58157
+"Saint Luke's East Hospital","HC CBC ONLY",164,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC AUTOMATED DIFF",366,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ELUTION",146,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ABY ID",196,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC IAT QUALITATIVE",24,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC AG SCREEN BY PT SERUM",24,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ABSORPTION",130,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC DIRECT AHG",130,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ENZYME TREATMENT",56,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC RBC AG TYPING OF REAGENT RBCS",56,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC RH PHENOTYPE OF REAGENT RBCS",56,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ABY SCREEN",99,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC PLATELET ABY",305,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC PLATELET CROSSMATCH",607,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC PLATELET CROSSMATCH <10% COMP",1164,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC CMV TYPING",166,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC AHG INDIRECT",81,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC RBC PRETREATMENT",56,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC ANTIGEN TYPING",146,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC 5 ALBUMIN 250 ML",404,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's East Hospital","HC CBC 25 ALBUMIN",522,"100 NE St Lukes Blvd, Lee's Summit, MO, 64086",64086,"Lee's Summit",184,NA,51826,1230676,-94.38195,38.94175
+"Saint Luke's Hospital","HC BLOOD CONSERVATION SYSTEM CBCII CONSTAVAC 225-028-614",646,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ONLY",164,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC AUTOMATED DIFF",366,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ELUTION",146,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ABY ID",196,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC IAT QUALITATIVE",24,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC AG SCREEN BY PT SERUM",24,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ABSORPTION",130,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC DIRECT AHG",130,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ENZYME TREATMENT",56,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC RBC AG TYPING OF REAGENT RBCS",56,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC RH PHENOTYPE OF REAGENT RBCS",56,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ABY SCREEN",99,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC PLATELET ABY",305,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC PLATELET CROSSMATCH",607,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC PLATELET CROSSMATCH <10% COMP",1164,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC CMV TYPING",166,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC AHG INDIRECT",81,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC RBC PRETREATMENT",56,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC ANTIGEN TYPING",146,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC 5 ALBUMIN 250 ML",404,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Saint Luke's Hospital","HC CBC 25 ALBUMIN",522,"232 S Woods Mill Rd, Chesterfield, MO, 63017",63017,"Chesterfield",462,NA,63821,1511123,-90.50342,38.6515
+"Capital Region Medical Center","CBC AUTO DIFF-PRENATAL",0,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"Capital Region Medical Center","CBC AUTO W/MAN DIFF",62,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"Capital Region Medical Center","CBC WITH AUTO DIFF.",62,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"Capital Region Medical Center","CBC-BHRT PANEL",10,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"Capital Region Medical Center","DIFFERENTIAL-CBC",29,"1125 Madison Street, Jefferson City, MO, 65101",65101,"Jefferson City",114,NA,17048,502476,-92.18203,38.56665
+"University of Missouri Hospital","CBC AUTO DIFF P08820289",49.4,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","CBC AUTO DIFF P28620289",49.4,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","CBC WITH MANUAL DIFF P08820290",41.1,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","CBC WITH MANUAL DIFF P28620290",41.1,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","COMPLETE CBC AUTOMATED  P08820288",41.1,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","COMPLETE CBC AUTOMATED  P28620288",41.1,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"University of Missouri Hospital","WCH MEDLINE DYNJTS0214 TRAY NEEDLE BX BONE 11X4IN 16G-WCCBC",235,"One Hospital Drive, Columbia, MO, 65212",65212,"Columbia",587,NA,126788,2595460,-92.3273683,38.9381449
+"Ozarks Medical Center","CBC W MANUAL DIFF",0,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","HF CBC",8.75,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","CBC W/MANUAL DIFFERENTIAL",77.25,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","CBC AUTOMATED W/AUTOMATED",133.25,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","CBC W/MANUAL",0,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","COMPLETE BLOOD COUNT",8.25,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","CBC W AUTO",10.25,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","COMPLETE BLOOD COUNT",8.25,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Ozarks Medical Center","CBC W/DIFF",31,"1100 Kentucky Avenue, West Plains, MO, 65775",65775,"West Plains",103,NA,19097,406891,-91.87558,36.738
+"Pemiscot Memorial Health System","CBC W/AUTO DIFF",24.5,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Pemiscot Memorial Health System","CBC W/MANUAL DIFF",71.5,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Pemiscot Memorial Health System","CBC W/MANUAL DIFF",21,"907 East Reed, Hayti, MO, 63851",63851,"Hayti",167,NA,4804,74792,-89.74066,36.236813
+"Saint Francis Medical Center","HC CBC/AUTO DIFF",125,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HC CBC/MANUAL DIFF",125,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HC CBC-NO DIFF",136,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Saint Francis Medical Center","HC CBC-NO DIFF(STROKE)",178,"211 St Francis Dr, Cape Girardeau, MO, 63703",63703,"Cape Girardeau",302,NA,57341,1955417,-89.57125,37.30357
+"Texas County Memorial Hospital","X CBC/AUTO DIFF",52,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","CBC ONLY",44.9,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","CBC/REF LAB***",39.75,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","X CBC/MANUAL DIFF",44.9,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Texas County Memorial Hospital","X CBC/HEMOGRAM",44.9,"1333 S. Sam Houston Boulevard, Houston, MO, 65483",65483,"Houston",47,NA,3905,74237,-91.95923,37.317314
+"Truman Medical Center Hospital Hill","KT CBC11 BLOOD CONSERVATION",197.84,"2301 Holmes Street, Kansas City, MO, 64108",64108,"Kansas City",238,NA,74957,694159,-94.575775,39.085087
+"Western Missouri Medical Center","General health panel This panel must include the following: Comprehensive metabolic panel (80053) Blood count, complete (CBC), automated and automated differential WBC count (85025 or 85027 and 85004",637.56,"403 Burkarth Road, Warrensburg, MO, 64093",64093,"Warrensburg",69,NA,9105,238610,-93.72374,38.765457
+"Western Missouri Medical Center","Obstetric panel This panel must include the following: Blood count, complete (CBC), automated and automated differential WBC count (85025 or 85027 and 85004) OR Blood count, complete (CBC), automated",506.835,"403 Burkarth Road, Warrensburg, MO, 64093",64093,"Warrensburg",69,NA,9105,238610,-93.72374,38.765457
+"Western Missouri Medical Center","Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count",153.3,"403 Burkarth Road, Warrensburg, MO, 64093",64093,"Warrensburg",69,NA,9105,238610,-93.72374,38.765457
+"Western Missouri Medical Center","Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count)",126.84,"403 Burkarth Road, Warrensburg, MO, 64093",64093,"Warrensburg",69,NA,9105,238610,-93.72374,38.765457

@@ -1,0 +1,122 @@
+---
+title: "PDF to DF convert"
+author: "Jordan Smith"
+date: "2/24/2019"
+output: html_document
+---
+
+#install.packages("pdftables")
+load libraries
+```{r load libraries}
+#library(pdftools)
+#library(pdftables)
+library(tabulizer)
+library(tidyverse)
+```
+
+```{r list pdfs}
+pdfs <- list.files(pattern = ".pdf")
+pdfs
+```
+
+```{r convert pdf to csv}
+st_lukes_hospital_chesterfield <- extract_tables(file = "st-lukes-hospital-chesterfield-CDM.pdf", output = "data.frame")
+#st-lukes-hospital-des-peres-CDM-SLDPH.pdf
+```
+
+```{r convert list to dataframe}
+st_lukes_hospital_chesterfield_df <- dplyr::bind_rows(st_lukes_hospital_chesterfield)
+head(st_lukes_hospital_chesterfield_df)
+
+```
+
+```{r convert pdf to csv}
+st_lukes_hospital_des_pers <- extract_tables(file = "st-lukes-hospital-des-peres-CDM-SLDPH.pdf", output = "data.frame")
+#st-lukes-hospital-des-peres-CDM-SLDPH.pdf
+```
+
+```{r convert list to dataframe}
+st_lukes_hospital_des_peres_df <- dplyr::bind_rows(st_lukes_hospital_des_pers)
+head(st_lukes_hospital_des_peres_df)
+```
+
+```{r harmonize df}
+st_lukes_hospital_des_peres_df$hospital_name <- "Saint Luke's Des Peres Hospital"
+st_lukes_hospital_des_peres_df <- st_lukes_hospital_des_peres_df %>%
+  select(HospitalName = hospital_name, Description = X, Price = CHARGES)
+head(st_lukes_hospital_des_peres_df)
+st_lukes_hospital_des_peres_df$Price <- parse_number(st_lukes_hospital_des_peres_df$Price)
+head(st_lukes_hospital_des_peres_df)
+write.csv(st_lukes_hospital_des_peres_df, file = "st_lukes_hospital_des_peres.csv", row.names=FALSE)
+```
+
+```{r convert pdf to csv}
+black_river_medical_center <- extract_tables(file = "BRMC-Complete-Item-Master-121718.pdf", output = "data.frame")
+```
+
+```{r convert list to dataframe}
+black_river_medical_center_df <- dplyr::bind_rows(black_river_medical_center)
+head(black_river_medical_center_df)
+```
+```{r harmonize df}
+black_river_medical_center_df$hospital_name <- "Black River Medical Center"
+black_river_medical_center_df <- black_river_medical_center_df %>%
+  select(HospitalName = hospital_name, Description = ACETAMINOPHEN..TYLENOL..500MG.TAB, Price = X.1.25)
+black_river_medical_center_df$Price <- parse_number(black_river_medical_center_df$Price)
+write.csv(black_river_medical_center_df, file = "black_river_medical_center.csv", row.names=FALSE)
+```
+
+
+Cameron-Regional
+```{r convert pdf to csv}
+cameron_regional_medical_center <- extract_tables(file = "Cameron-Regional-2018-Chargemaster.pdf", output = "data.frame")
+```
+
+```{r define change names function}
+ChangeNames <- function(x) {
+    names(x) <- c("ChargeNumber", "Description", "CPT", "Price")
+    return(x)
+}
+
+cameron_regional_medical_center <- lapply(cameron_regional_medical_center, ChangeNames)
+```
+
+```{r convert list to dataframe}
+
+cameron_regional_medical_center_df <- dplyr::bind_rows(cameron_regional_medical_center)
+head(cameron_regional_medical_center_df)
+```
+
+freeman west
+```{r convert pdf to csv}
+freeman_west_hospital <- extract_tables(file = "freeman-cms-price-transparency.pdf", output = "data.frame")
+```
+
+```{r convert list to dataframe}
+freeman_west_hospital_df <- dplyr::bind_rows(freeman_west_hospital)
+head(freeman_west_hospital_df)
+```
+
+```{r harmonize df}
+freeman_west_hospital_df$hospital_name <- "Freeman West"
+freeman_west_hospital_df <- freeman_west_hospital_df %>%
+  select(HospitalName = hospital_name, Description, Price = Charge)
+write.csv(freeman_west_hospital_df, file = "freeman_west_hospital.csv", row.names=FALSE)
+```
+
+golden-valley-memorial
+```{r convert pdf to csv}
+golden_valley_memorial_hospital <- extract_tables(file = "golden-valley-memorial-chargemaster.pdf", output = "data.frame")
+```
+
+Nevada-diagnostics
+```{r convert pdf to csv}
+Nevada_diagnostics <- extract_tables(file = "Nevada-diagnostics-scans-DI-2018-12.pdf", output = "data.frame")
+nevada_supplies <- extract_tables(file = "Nevada-Misc-Supplies-2018-12.pdf", output = "data.frame")
+nevada_procedures <- extract_tables(file = "Nevada-Procedures-2018-12.pdf", output = "data.frame")
+```
+
+phelps
+```{r convert pdf to csv}
+phelps_county_regional_medical_center <- extract_tables(file = "Phelps-county-regional-medical-center-Chargemaster.pdf", output = "data.frame")
+```

@@ -1,0 +1,292 @@
+---
+title: "Leaflet map prep for shiny app"
+output: html_notebook
+---
+
+```{r load libraries}
+library(leaflet)
+```
+
+```{r load data}
+acetaminophen <- read.csv("acetaminophen_df.csv", stringsAsFactors = F)
+cbc <- read.csv("cbc_df.csv", stringsAsFactors = F)
+rooms <- read.csv("rooms_df.csv", stringsAsFactors = F)
+saline <- read.csv("saline_df.csv", stringsAsFactors = F)
+
+items_joined <- rbind(acetaminophen, cbc, rooms, saline)
+```
+
+
+```{r make map for acetaminophen}
+icons <- awesomeIcons(
+  icon = 'ion-medkit',
+  iconColor = 'black',
+  library = "ion",
+  markerColor = "blue"
+)
+
+leaflet(acetaminophen) %>% 
+  addTiles() %>%
+  setView(lng=-91.8318, lat=37.9643 , zoom=6) %>%
+  addAwesomeMarkers(~long, 
+             ~lat,
+             #icon=icons,
+             popup = ~as.character(HospitalName), 
+             label = ~as.character(HospitalName)
+  )
+```
+```{r make map for cbc}
+leaflet(cbc) %>% 
+  addTiles() %>%
+  setView(lng=-91.8318, lat=36.5643 , zoom=6) %>%
+  addCircleMarkers(lng = cbc$long, lat = cbc$lat,
+    color = cbc$Price,
+    stroke = FALSE, fillOpacity = 0.5
+  )
+```
+
+# bar plots
+```{r bar plots}
+ggplot(acetaminophen, aes(x=HospitalName, y=Price, fill=HospitalName)) +
+  geom_bar(stat = "identity") +
+  labs(title="Item price by Hospital") +
+  theme(axis.text.x = element_blank()) 
+
+
+
+```
+
+
+# Correlation plots
+```{r correlation plots}
+library(corrplot)
+library(RColorBrewer)
+acetaminophen_corr <-cor(acetaminophen[, c(3,7,9:10)])
+corrplot(acetaminophen_corr, type="upper", order="hclust",
+         col=brewer.pal(n=8, name="RdYlBu"))
+
+```
+
+# linear regression
+```{r linear regression}
+linearMod <- lm(Price ~ StaffedBeds + PatientDays + GrossPatientRevenue, data=acetaminophen)
+print(linearMod)
+summary(linearMod) 
+```
+We want to get some Missouri demographics data to examine some more angles on this hospital pricing data
+
+Here, we'll use the tidycensus package to get American Community Survey data for Missouri, by zipcode
+```{r load tidycensus and get apikey}
+library(tidyverse)
+library(tidycensus)
+
+#census_api_key("e209eaedec5f34caf642425c214931727ebaeb39")
+census_api_key(install = TRUE)
+```
+```{r store acs variables for searching}
+v15 <- load_variables(2017, "acs5", cache = TRUE)
+
+View(v15)
+```
+
+```{r get income data by zipcode for MO}
+usa_zip_income <- get_acs(geography = "zip code tabulation area", 
+              variables = c(medincome = "B19013_001"))
+usa_zip_income <- select(usa_zip_income, Zip = GEOID, medianIncome = estimate, medianIncomeMOE = moe)
+usa_zip_income$Zip <- parse_number(usa_zip_income$Zip)
+str(usa_zip_income)
+
+hosp_zip_medInc <- inner_join(hosp_zips, usa_zip_income, by = "Zip")
+#mo_zip_income
+```
+```{r get hospital zip codes}
+hosp_addys <- read.csv("../hospital_addresses.csv", header = F, col.names = c("HospID", "Address", "City", "State", "Zip"))
+hosp_addys$City <- gsub(pattern = "Saint", replacement = "St.", x = hosp_addys$City)
+
+hosp_zips <- select(hosp_addys, Zip)
+hosp_cities <- select(hosp_addys, City)
+```
+
+```{r get population data}
+usa_zip_population <- get_acs(geography = "zip code tabulation area", 
+              variables = c(tot_population = "B01003_001"))
+str(usa_zip_population)
+usa_zip_population <- select(usa_zip_population, Zip = GEOID, totalPopulation = estimate, totalPopulationMOE = moe)
+usa_zip_population$Zip <- parse_number(usa_zip_population$Zip)
+hosp_zip_population <- inner_join(hosp_zips, usa_zip_population, by = "Zip")
+
+```
+
+```{r get insurance coverage data}
+#B27011_001
+usa_zip_insurance <- get_acs(geography = "zip code tabulation area", 
+              variables = c(insurance_coverage = "B27011_001"))
+str(usa_zip_insurance)
+usa_zip_insurance <- select(usa_zip_insurance, Zip = GEOID, totalInsured = estimate, totalInsuredMOE = moe)
+usa_zip_insurance$Zip <- parse_number(usa_zip_insurance$Zip)
+hosp_zip_insurance <- inner_join(hosp_zips, usa_zip_insurance, by = "Zip")
+```
+
+```{r join demographic data to item dataframes}
+item_dfs <- list(acetaminophen, cbc, saline, rooms)
+item_dfs_with_income <- lapply(item_dfs, function(x) inner_join(x, hosp_zip_medInc, by = "Zip"))
+item_dfs_with_income_population <- lapply(item_dfs_with_income, function(x) inner_join(x, hosp_zip_population, by = "Zip"))
+item_dfs_with_income_population_insurance <- lapply(item_dfs_with_income_population, function(x) inner_join(x, hosp_zip_insurance, by = "Zip"))
+#make new column of percentInsured
+item_demo_list <- lapply(item_dfs_with_income_population_insurance, function(x) mutate(x, percentInsured = totalInsured/totalPopulation*100))
+```
+
+```{r check dfs}
+aceta_demos <- as.data.frame(item_demo_list[1])
+aceta_demos <- aceta_demos[!duplicated(aceta_demos),]
+```
+
+```{r convert list into large dataframe}
+HospitalPricingApp_df <- item_demo_list %>% reduce(bind_rows) %>%
+  select(HospitalName, Price, Zip, City, StaffedBeds, GrossPatientRevenue, long, lat, Item, medianIncome, totalPopulation, totalInsured, percentInsured)
+print(str(HospitalPricingApp_df))
+print(colnames(HospitalPricingApp_df))
+
+```
+```{r save df for app}
+write.csv(HospitalPricingApp_df, "HospitalPricingAppData.csv", row.names = FALSE)
+```
+
+#Here's a rub. The Mizzou hospital has its own zip code, but doesn't have demographic data. Try again, using city demoraphic data, not zip code data
+
+#Find data by city, not zip code
+```{r insurance city data}
+mo_city_insurance <- get_acs(geography = "place", 
+              variables = c(insurance_coverage = "B27011_001"),
+              state = "MO")
+str(mo_city_insurance)
+#remove place designation and state
+mo_city_insurance$NAME <- gsub(pattern = " city, Missouri| village, Missouri| town, Missouri| CDP, Missouri", replacement = "", x = mo_city_insurance$NAME)
+mo_city_insurance <- select(mo_city_insurance, City = NAME, totalInsured = estimate, totalInsuredMOE = moe)
+hosp_city_insurance <- left_join(hosp_cities, mo_city_insurance, by = "City")
+
+```
+
+```{r population city data}
+mo_city_population <- get_acs(geography = "place", 
+              variables = c(tot_population = "B01003_001"),
+              state = "MO")
+str(mo_city_population)
+#remove place designation and state
+mo_city_population$NAME <- gsub(pattern = " city, Missouri| village, Missouri| town, Missouri| CDP, Missouri", replacement = "", x = mo_city_population$NAME)
+#select rows of interest and rename
+mo_city_population <- select(mo_city_population, City = NAME, totalPopulation = estimate, totalPopulationMOE = moe)
+#use join to filter demo data to only cities with listed hospitals
+hosp_city_population <- left_join(hosp_cities, mo_city_population, by = "City")
+#check structure
+str(mo_city_population)
+```
+
+```{r medianIncome city data}
+mo_city_medInc <- get_acs(geography = "place", 
+              variables = c(medincome = "B19013_001"),
+              state = "MO")
+str(mo_city_medInc)
+#remove place designation and state
+mo_city_medInc$NAME <- gsub(pattern = " city, Missouri| village, Missouri| town, Missouri| CDP, Missouri", replacement = "", x = mo_city_medInc$NAME)
+mo_city_medInc <- select(mo_city_medInc, City = NAME, medianIncome = estimate, medianIncomeMOE = moe)
+hosp_city_medInc <- left_join(hosp_cities, mo_city_medInc, by = "City")
+
+str(hosp_city_medInc)
+```
+
+```{r join city demographic data to item dataframes}
+#harmonize city names in pricing data containing Saint (ex. Saint Louis)
+items_joined$City <- gsub(pattern = "Saint", replacement = "St.", x = items_joined$City)
+#join hospital pricing data with city median income data
+item_city_with_income <- left_join(items_joined, hosp_city_medInc, by = "City")
+#join pricing/median income data with population data
+item_city_with_income_population <- left_join(item_city_with_income, hosp_city_population, by = "City")
+#join pricing/median/population data with insurace data
+item_city_with_income_population_insurance <- left_join(item_city_with_income_population, hosp_city_insurance, by = "City")
+#make new column for percentInsured
+item_city_demo <- mutate(item_city_with_income_population_insurance, percentInsured = totalInsured/totalPopulation*100)
+```
+
+```{r convert city list into large dataframe}
+HospitalPricingApp_df <- item_city_demo %>%
+  select(HospitalName, Price, Zip, City, StaffedBeds, GrossPatientRevenue, long, lat, Item, medianIncome, totalPopulation, totalInsured, percentInsured)
+HospitalPricingApp_df <- HospitalPricingApp_df[!duplicated(HospitalPricingApp_df),]
+print(str(HospitalPricingApp_df))
+#print(colnames(HospitalPricingApp_df))
+
+```
+
+
+```{r boxplot}
+HospitalPricingApp_df %>% 
+  #filter(Item == "Acetamenophin (325mg Tablet)") %>%
+  #filter(Item == "Complete Blood Count with Auto Differential") %>%
+  #filter(Item == "Normal Saline (for IV)") %>%
+  filter(Item == "Private Room (Medical/Surgical Unit)") %>%
+  ggplot(aes(x=Item, y=Price)) +
+  geom_boxplot()
+```
+```{r lm aceta}
+aceta <- HospitalPricingApp_df %>%
+  filter(Item == "Acetamenophin (325mg Tablet)") %>%
+  select(Price, StaffedBeds, GrossPatientRevenue, medianIncome, totalPopulation, percentInsured)
+aceta$StaffedBeds <- scale(aceta$StaffedBeds)
+aceta$GrossPatientRevenue <- scale(aceta$GrossPatientRevenue)
+aceta$medianIncome <- scale(aceta$medianIncome)
+aceta$totalPopulation <- scale(aceta$totalPopulation)
+aceta$percentInsured <- scale(aceta$percentInsured)
+aceta_lr <- lm(Price ~ ., data = aceta)
+print("LR Summary for Acetaminophen:")
+print(summary(aceta_lr))
+```
+
+```{r lm room}
+rm <- HospitalPricingApp_df %>%
+  filter(Item == "Private Room (Medical/Surgical Unit)") %>%
+  select(Price, StaffedBeds, GrossPatientRevenue, medianIncome, totalPopulation, percentInsured)
+rm$StaffedBeds <- scale(rm$StaffedBeds)
+rm$GrossPatientRevenue <- scale(rm$GrossPatientRevenue)
+rm$medianIncome <- scale(rm$medianIncome)
+rm$totalPopulation <- scale(rm$totalPopulation)
+rm$percentInsured <- scale(rm$percentInsured)
+rm_lr <- lm(Price ~ ., data = rm)
+summary(rm_lr)
+```
+```{r lm cbc}
+cbc_sub <- HospitalPricingApp_df %>%
+  filter(Item == "Complete Blood Count with Auto Differential") %>%
+  select(Price, StaffedBeds, GrossPatientRevenue, medianIncome, totalPopulation, percentInsured)
+cbc_sub$StaffedBeds <- scale(cbc_sub$StaffedBeds)
+cbc_sub$GrossPatientRevenue <- scale(cbc_sub$GrossPatientRevenue)
+cbc_sub$medianIncome <- scale(cbc_sub$medianIncome)
+cbc_sub$totalPopulation <- scale(cbc_sub$totalPopulation)
+cbc_sub$percentInsured <- scale(cbc_sub$percentInsured)
+cbc_sub_lr <- lm(Price ~ ., data = cbc_sub)
+summary(cbc_sub_lr)
+```
+```{r lm saline}
+saline_sub <- HospitalPricingApp_df %>%
+  filter(Item == "Normal Saline (for IV)") %>%
+  select(Price, StaffedBeds, GrossPatientRevenue, medianIncome, totalPopulation, percentInsured)
+saline_sub$StaffedBeds <- scale(saline_sub$StaffedBeds)
+saline_sub$GrossPatientRevenue <- scale(saline_sub$GrossPatientRevenue)
+saline_sub$medianIncome <- scale(saline_sub$medianIncome)
+saline_sub$totalPopulation <- scale(saline_sub$totalPopulation)
+saline_sub$percentInsured <- scale(saline_sub$percentInsured)
+saline_sub_lr <- lm(Price ~ ., data = saline_sub)
+summary(saline_sub_lr)
+```
+
+```{r lm cbc only medianIncome}
+cbc_sub <- HospitalPricingApp_df %>%
+  filter(Item == "Complete Blood Count with Auto Differential") %>%
+  select(Price, StaffedBeds, GrossPatientRevenue, medianIncome, totalPopulation, percentInsured)
+cbc_sub$StaffedBeds <- scale(cbc_sub$StaffedBeds)
+cbc_sub$GrossPatientRevenue <- scale(cbc_sub$GrossPatientRevenue)
+cbc_sub$medianIncome <- scale(cbc_sub$medianIncome)
+cbc_sub$totalPopulation <- scale(cbc_sub$totalPopulation)
+cbc_sub$percentInsured <- scale(cbc_sub$percentInsured)
+cbc_sub_medInc_lr <- lm(Price ~ medianIncome, data = cbc_sub)
+summary(cbc_sub_medInc_lr)
+```

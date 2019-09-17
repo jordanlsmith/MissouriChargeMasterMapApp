@@ -1,0 +1,345 @@
+---
+title: "Initial Exploration of chargemaster csvs"
+author: "Jordan Smith and Muregesan Raju"
+date: "3/2/2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+The goal of this Rmd is to load all the csv Chargemaster files we've recieved up to now.  The initial data acquistion for this project has been very interesting, but also challenging.  All chargemasters are required to be accessible via a hospital's website--but not all hospitals are fully compliant with this yet. In addition, there is no standard structure for these chargemasters.  Most chargemasters are in PDF or HTML formats.  We are still working on parsing those chargemasters accurately. In the meantime, here is an intial investigation of the subset of chargemasters that are in .csv format
+```{r load libraries}
+library(tidyverse)
+library(readxl)
+```
+
+
+## Load Data
+This Rmd is meant to be run in the same directory as the chargemaster data. For ease of analysis, we'll start with csv files of chargemasters (we've already converted some PDFs to csvs)
+```{r check dir for all csvs}
+csvs = list.files(pattern = "*.csv", full.names = TRUE)
+#xls = list.files(pattern = "*.xls*", full.names = TRUE)
+csvs
+```
+
+Note: each csv has a slightly different structure. Will read in data individually and harmonize structure somewhat to aid in analysis later
+```{r find read csv error read in one by one}
+# [1] "./black_river_medical_center.csv"
+black_river <- read.csv(csvs[1], stringsAsFactors=FALSE)
+black_river <- select(black_river, HospitalName, Description, Price)
+# [2] "./bothwell-regional-health-center-price-transperancy-2019.csv"
+bothwell <- read.csv(csvs[2], stringsAsFactors=FALSE)
+colnames(bothwell) <- c("ChargeCode", "Description", "Price", "SelfPayPrice")
+bothwell$Price <- parse_number(bothwell$Price)
+bothwell$HospitalName <- "Bothwell Regional Health Center"
+bothwell <- select(bothwell, HospitalName, Description, Price)
+#   [3] "./cmh-price-file.csv"    
+citizens_memorial_hospital <- read.csv(csvs[3], stringsAsFactors=FALSE)
+colnames(citizens_memorial_hospital) <-c("ChargeCode", "Description", "Price")
+citizens_memorial_hospital$Price <- parse_number(citizens_memorial_hospital$Price)
+citizens_memorial_hospital$HospitalName <- "Citizens Memorial Hospital"
+citizens_memorial_hospital <- select(citizens_memorial_hospital, HospitalName, Description, Price)
+#  [5] "./lake_regional_standard_charges.csv" 
+#THIS ONE ERRORS MULTIBYTE
+# lake_regional <- read.csv(csvs[3], stringsAsFactors=FALSE)
+# [4] "./freeman_west_hospital.csv" 
+freeman <- read.csv(csvs[4], stringsAsFactors=FALSE)
+freeman <- select(freeman, HospitalName, Description, Price)
+#   [6] "./liberty-chargemaster.csv"    
+liberty <- read.csv(csvs[6], stringsAsFactors=FALSE)
+colnames(liberty) <-c("Description", "Price")
+liberty$Price <- parse_number(liberty$Price)
+liberty$HospitalName <- "Liberty Hospital"
+liberty <- select(liberty, HospitalName, Description, Price)
+#  [7] "./MidamericaDivision_ResearchMedicalCenter_CM.csv" 
+# EOF within quoted string
+#research <- read.csv(csvs[7], stringsAsFactors=FALSE)
+#  [9] "./moberly-regional-medical-center-118CDM.csv"
+moberly <- read.csv(csvs[9], stringsAsFactors=FALSE)
+colnames(moberly) <- c("ChargeCode", "Description", "Price", "AsOfDate")
+moberly$HospitalName <- "Moberly Regional Medical Center"
+moberly <- select(moberly, HospitalName, Description, Price)
+#   [10] "./mosaic-life-care-nmc-pt-file.csv"   
+mosiac <- read.csv(csvs[10], stringsAsFactors=FALSE)
+colnames(mosiac) <- c("ChargeCode", "Description", "Price")
+mosiac$Price <- parse_number(mosiac$Price)
+mosiac$HospitalName <- "Mosaic Life Care at Saint Joseph - Medical Center"
+mosiac <- select(mosiac, HospitalName, Description, Price)
+#  11] "./north-kansas-city-hospital-chargemaster-010119.csv"       
+north_kansas_city <- read.csv(csvs[11], stringsAsFactors=FALSE)
+colnames(north_kansas_city) <- c("Description", "Price")
+north_kansas_city$Price <- parse_number(north_kansas_city$Price)
+north_kansas_city$HospitalName <- "North Kansas City Hospital"
+north_kansas_city <- select(north_kansas_city, HospitalName, Description, Price)
+#  [12] "./Northeast-regional-medical-center-chargemaster-166CDM.csv"    
+northeast_regional <- read.csv(csvs[12], stringsAsFactors=FALSE)
+colnames(northeast_regional) <- c("ChargeCode", "Description", "Price", "AsOfDate")
+northeast_regional$HospitalName <- "Northeast Regional Medical Center"
+northeast_regional <- select(northeast_regional, HospitalName, Description, Price)
+# [13] "./poplar-bluff-regional-medical-center-1486CDM.csv"   
+poplar_bluff <- read.csv(csvs[13], stringsAsFactors=FALSE)
+colnames(poplar_bluff) <- c("ChargeCode", "Description", "Price", "AsOfDate")
+poplar_bluff$HospitalName <- "Poplar Bluff Regional Medical Center - Oak Grove"
+poplar_bluff <- select(poplar_bluff, HospitalName, Description, Price)
+# [14] "./SE Health Price List_11_30_2018 - SE Health Pricing.csv"  
+southeast <- read.csv(csvs[14], stringsAsFactors=FALSE, skip = 1)
+colnames(southeast) <- c("Description", "CPT", "Price")
+southeast$HospitalName <- "Southeast Hospital"
+southeast <- select(southeast, HospitalName, Description, Price)
+# [15] "./SE_Health_Stoddard_Price_List_11_30_2018 - Stoddard Pricing.csv"
+southeast_stoddard <- read.csv(csvs[15], stringsAsFactors=FALSE, skip = 1)
+colnames(southeast_stoddard) <- c("Description", "CPT", "Price")
+southeast_stoddard$HospitalName <- "Southeast Health Center of Stoddard County"
+southeast_stoddard <- select(southeast_stoddard, HospitalName, Description, Price)
+# [16] "./st_lukes_hospital_des_peres.csv"   
+st_lukes_des_peres <- read.csv(csvs[16], stringsAsFactors=FALSE)
+st_lukes_des_peres <- select(st_lukes_des_peres, HospitalName, Description, Price)
+# [17] "./st-lukes-east-hospital-2019_SLE_CDM.csv"    
+st_lukes_east <- read.csv(csvs[17], stringsAsFactors=FALSE)
+colnames(st_lukes_east) <- c("ChargeCode", "Description", "Price", "V1", "V2", "V3")
+st_lukes_east$Price <- parse_number(st_lukes_east$Price)
+st_lukes_east$HospitalName <- "Saint Luke's East Hospital"
+st_lukes_east <- select(st_lukes_east, HospitalName, Description, Price)
+# [18] "./st-lukes-hospital-2019_SLH_CDM.csv" 
+st_lukes <- read.csv(csvs[18], stringsAsFactors=FALSE)
+colnames(st_lukes) <- c("ChargeCode", "Description", "Price")
+st_lukes$Price <- parse_number(st_lukes$Price)
+st_lukes$HospitalName <- "Saint Luke's Hospital"
+st_lukes <- select(st_lukes, HospitalName, Description, Price)
+
+```
+
+Load excel data files
+```{r check directory for all xls files}
+xls = list.files(pattern = "*.xls*", full.names = TRUE)
+xls
+```
+
+```{r load excel files}
+# [1] "./Capital-regional-copy-of-website-charge-master.xlsx"
+#capital regional note: 20 sheets; first sheet is only disclamer. All sheets==the header/data start on 4th line; columns are "CHARGE CODE", "CHARGE DESCRIPTION", "MASTER FEE". Longest sheet has ~450 entries
+capital_path <- "./Capital-regional-copy-of-website-charge-master.xlsx"
+capital_regional_list <- lapply(excel_sheets(capital_path), read_excel, path = capital_path, range="A5:C2500", col_names = c("chargeCode", "Description", "Price"), trim_ws=TRUE)
+#capital_regional <- read_excel(path = "./Capital-regional-copy-of-website-charge-master.xlsx", col_names = )
+capital_regional_df <- do.call(rbind.data.frame, capital_regional_list) #convert list to datframe
+capital_regional_df$Price <- as.numeric(capital_regional_df$Price) #make Price numeric
+capital_regional_df <- capital_regional_df %>% drop_na(Price) #drop rows with empty prices
+capital_regional_df$HospitalName <- "Capital Region Medical Center"
+capital_regional_df <- select(capital_regional_df, HospitalName, Description, Price)
+
+#[2] "./Mizzou-ChargeMaster-Transparency-1_1_19.xlsx"
+# notes: 18 info sheets and one blank sheet. All sheets==the header/data start on 4th line; columns are "CHARGE DESCRIPTION", "CHARGE CODE", "CHARGE". Longest sheet has ~22,000 entries
+mizzou_path <- "./Mizzou-ChargeMaster-Transparency-1_1_19.xlsx"
+#excel_sheets(mizzou_path)
+mizzou_list <- lapply(excel_sheets(mizzou_path), 
+                                read_excel, 
+                                path = mizzou_path, 
+                                skip = 5,
+                                #range="A5:C2500", 
+                                col_names = c("Description", "chargeCode", "Price"),
+                                trim_ws=TRUE)
+mizzou_df <- do.call(rbind.data.frame, mizzou_list) #convert list to datframe
+mizzou_df <- mizzou_df %>% drop_na(Price) #drop rows with empty prices
+mizzou_df$HospitalName <- "University of Missouri Hospital"
+mizzou_df <- select(mizzou_df, HospitalName, Description, Price)
+
+# [3] "./ozarks-medical-center-cdm-for-web.xlsx" 
+# Note: single sheet, three columns: "Service", "Description", "Price"
+okarks_medical_center <- read_excel("./ozarks-medical-center-cdm-for-web.xlsx", skip = 1, col_names = c("chargeCode", "Description", "Price"))
+okarks_medical_center$HospitalName <- "Ozarks Medical Center"
+okarks_medical_center <- select(okarks_medical_center, HospitalName, Description, Price)
+
+# [4] "./pemiscot-memorial-chargemaster.xlsx" 
+# Note: single sheet, two columns: "Description" and "Price". Header starts on row 4
+pemiscot_memorial <- read_excel("./pemiscot-memorial-chargemaster.xlsx", skip = 5, col_names = c("Description", "Price"))
+pemiscot_memorial$HospitalName <- "Pemiscot Memorial Health System"
+pemiscot_memorial <- select(pemiscot_memorial, HospitalName, Description, Price)
+
+# [5] "./Saint_Francis_Healthcare_System_Charge_Master_2019-01-01.xlsx" 
+# NOTE: single sheet "Sheet 1", two columns: "Description" and "Price"
+saint_francis_healthcare_system <- read_excel("./Saint_Francis_Healthcare_System_Charge_Master_2019-01-01.xlsx",skip = 1,  col_names = c("Description", "Price"))
+saint_francis_healthcare_system$HospitalName <- "Saint Francis Medical Center"
+saint_francis_healthcare_system <- select(saint_francis_healthcare_system, HospitalName, Description, Price)
+
+#[6] "./texas-county-memorial-hospital-2018-chargemaster.xlsm"
+#excel_sheets("./texas-county-memorial-hospital-2018-chargemaster.xlsm")
+# Note: Three Sheets; the second two are empty. Sheet 1 has three columns: "SERVICE ID", "TECHNICAL NAME", "PRICE STANDARD TCMH"
+texas_county_memorial_hospital <- read_excel("./texas-county-memorial-hospital-2018-chargemaster.xlsm",sheet = 1, skip = 1,  col_names = c("chargeCode" ,"Description", "Price"))
+texas_county_memorial_hospital$HospitalName <- "Texas County Memorial Hospital"
+texas_county_memorial_hospital <- select(texas_county_memorial_hospital, HospitalName, Description, Price)
+
+# [7] "./truman-medical-center-understanding-costs.xlsx" 
+# excel_sheets("./truman-medical-center-understanding-costs.xlsx")
+# Note: 1 sheet, 6 columns: "BILL_ITEM_ID", "TMC CDM", "LONG_DESCRIPTION", "CPT OR HCPCS	MODIFIER", "TMC Price Schedule"
+truman_medical_center <- read_excel("./truman-medical-center-understanding-costs.xlsx",sheet = 1, skip = 1, col_types = c("numeric", "text", "text", "text", "text", "numeric"), col_names = c("chargeCode" ,"TMC CDM", "Description", "CPT OR HCPCS",	"MODIFIER", "Price"))
+truman_medical_center$HospitalName <- "Truman Medical Center Hospital Hill"
+truman_medical_center <- select(truman_medical_center, HospitalName, Description, Price)
+
+#[8] "./Western-missouri-medical-center-Charge-Master-Hosp-and-Clinic-12.28.xls"
+# Note: three sheets, 8 columns in first two: "WMMC_CDM","WMMC_CPT", "CPT Description", "HCPCS Description", "PS: Bill item Id", "Price Sched Desc", "WMMC_Tech [Price Schedule]", "Standard Charge"
+# 3 columns in sheet 3: "WMMC_CPT", "CPT/HCPCS Description", "PS:PS Price"
+#excel_sheets("./Western-missouri-medical-center-Charge-Master-Hosp-and-Clinic-12.28.xls")
+western_path <- "./Western-missouri-medical-center-Charge-Master-Hosp-and-Clinic-12.28.xls"
+western_sheet_1 <- read_excel(western_path, sheet = 1) %>% select(Description = `CPT Description`, Price = `Standard Charge`)
+western_sheet_2 <- read_excel(western_path, sheet = 2) %>% select(Description = `CPT Description`, Price = `Standard Charge`)
+western_sheet_3 <- read_excel(western_path, sheet = 3) %>% select(Description = `CPT/HCPCS Description`, Price = `PS:PS Price`)
+western_missouri_medical_center <- rbind(western_sheet_1, western_sheet_2, western_sheet_3)
+western_missouri_medical_center$HospitalName <- "Western Missouri Medical Center"
+western_missouri_medical_center <- select(western_missouri_medical_center, HospitalName, Description, Price)
+```
+
+```{r check xl}
+# print(str(truman_medical_center))
+# print(summary(truman_medical_center))
+# head(capital_regional_df)
+# cpt <- as.factor(truman_medical_center$`CPT OR HCPCS`)
+# levels(cpt)[1:20]
+# head(western_sheet_1)
+# str(western_sheet_1)
+# colnames(western_sheet_1)
+# str(western_sheet_2)
+# colnames(western_sheet_2)
+# str(western_sheet_3)
+# colnames(western_sheet_3)
+```
+
+# xl's capital-regional,
+
+## Join Data: as List
+
+Now that the data structures are more standardized (we are mostly interested in Description and Price columns), we will join all dfs into a list of dfs. We will use the apply family of functions for some overall analysis.
+```{r make list of readable csvs}
+csv_list <- list(black_river, bothwell, citizens_memorial_hospital, freeman, liberty, moberly, mosiac, north_kansas_city, northeast_regional, poplar_bluff, southeast, southeast_stoddard, st_lukes_des_peres, st_lukes_east, st_lukes)
+names(csv_list) <- c("black_river", "bothwell", "citizens_memorial_hospital", "freeman", "liberty", "moberly", "mosiac", "north_kansas_city", "northeast_regional", "poplar_bluff", "southeast", "southeast_stoddard", "st_lukes_des_peres", "st_lukes_east", "st_lukes")
+
+```
+
+## Summary Stats
+
+list summary of stats for the list of dfs
+```{r list summary stats}
+summary(csv_list) #overall
+```
+
+Print summary stats for each df in the list
+```{r df summary stats}
+lapply(csv_list, function(x) summary(x)) #summary stats for each df
+```
+It looks like most of the chargemasters loaded/cleaned up well--EXCEPT the Freeman Hosp sheet. It is mostly empty (11030 NAs out of 11076 rows! Yikes!). I will omit it from further analysis
+
+## Load Data: as large dataframe
+
+Next, I'll combine all the dfs into one master pricing list:
+```{r combine dfs}
+master_chargemaster_df <- rbind(black_river, bothwell, citizens_memorial_hospital, liberty, moberly, mosiac, north_kansas_city, northeast_regional, poplar_bluff, southeast, southeast_stoddard, st_lukes_des_peres, st_lukes_east, st_lukes, capital_regional_df, mizzou_df, okarks_medical_center, pemiscot_memorial, saint_francis_healthcare_system, texas_county_memorial_hospital, truman_medical_center, western_missouri_medical_center)
+```
+
+Check structure and write the master chargemaster df as .csv for easy reload later
+```{r check structure of chargemasters}
+str(master_chargemaster_df)
+write.csv(master_chargemaster_df, file = "./ProcessedChargeMasterLists/master_chargemaster_df.csv", row.names = F)
+```
+
+join the chargemaster df to the hospital info df (which includes location/size/revenue data for each hospital)
+```{r load hosp info and join}
+hospital_info_df <- read.csv("Missouri_Hospital_Chargemaster_Info.csv", stringsAsFactors = F) %>% select(HospitalName = Hospital_Name, Address, Zip, City, StaffedBeds = Staffed_Beds, TotalDischarges = Total_Discharges, PatientDays = Patient.Days, GrossPatientRevenue = Gross_Patient_Revenue, long, lat)
+master_df <- left_join(master_chargemaster_df, hospital_info_df, by = "HospitalName")
+```
+
+Check structure and write the master df as .csv for easy reload later
+```{r check structure of joined df}
+str(master_df)
+#looks like some of the hosp_info df columns need to be converted to numeric
+master_df$Zip <- as.numeric(master_df$Zip)
+master_df$StaffedBeds <- as.numeric(master_df$StaffedBeds)
+master_df$TotalDischarges <- as.numeric(master_df$TotalDischarges)
+master_df$PatientDays <- parse_number(master_df$PatientDays)
+master_df$GrossPatientRevenue <- parse_number(master_df$GrossPatientRevenue)
+str(master_df)
+write.csv(master_df, file = "./ProcessedChargeMasterLists/master_df.csv", row.names = F)
+```
+
+## Most and Least Expensive entries
+
+Just for fun, I'd like to see what the most and least expensive procedures are for each hospital
+```{r mostleast expensive}
+most_expensive <- master_df %>% 
+  group_by(HospitalName) %>%
+  filter(Price == max(Price, na.rm = TRUE))#most expensive item for each df
+most_expensive
+```
+Interestingly, these descriptions seem to all be either heart-related surgeries or chemotherapy drugs.
+
+```{r least expensive}
+least_expensive <- master_df %>% 
+  group_by(HospitalName) %>%
+  filter(Price == min(Price, na.rm = TRUE))#most expensive item for each df
+least_expensive
+```
+Wow.  The least expensive list is MUCH more varied--it seems that either there was some error in coding these prices or errors in the chargemasters.  There don't appear to be any patterns in the pricing here--we see procedures and drugs and services all listed together.
+
+## Searching text descriptions to find similar entries
+
+For the main part of this project, we want to look at the similarity in prices among procedures/items/services with similar decriptions.  This is a grep test for finding descriptions for our intial comparison.
+
+Here, we will make lists of Descriptions containing terms we are interested in, to examine the variation in description
+
+### Room Prices
+we want to know the standard cost for a room
+```{r grep descriptions rooms}
+#we want to know the standard cost for a room
+rooms <- master_df %>%
+  filter(str_detect(Description, regex('room|private room|med surg|medical/surgical', ignore_case=TRUE))) #%>%
+  #filter(str_detect(Description, regex('private room', ignore_case=TRUE)))
+rooms$Item <- "Private Room (Medical/Surgical Unit)"
+write.csv(rooms, file = "./ProcessedChargeMasterLists/rooms_df.csv", row.names = F)
+```
+
+### Saline 
+A bag of saline (1000mL) is a very commonly used item
+```{r grep descriptions saline}
+#also, what is the standard cost of a bag of saline?
+#saline <- lapply(csv_list, function(x) grep("saline", x$Description, ignore.case=TRUE, value = TRUE))
+saline <- master_df %>%
+  filter(str_detect(Description, regex('saline', ignore_case=TRUE))) #%>%
+  #filter(str_detect(Description, fixed('1000', ignore_case=TRUE)))
+saline$Item <- "Normal Saline (for IV)"
+saline
+write.csv(saline, file = "./ProcessedChargeMasterLists/saline_df.csv", row.names = F)
+```
+
+### Cataracts
+as per Murugesan's interests, let's look for cataracts descriptions
+```{r grep descriptions cataract}
+#as per Murugesan's interests, let's look for cataracts descriptions
+cataract <- master_df %>% 
+  filter(str_detect(Description, regex('cataract', ignore_case=TRUE))) #%>%
+  #filter(str_detect(Description, fixed('1000', ignore_case=TRUE)))
+cataract
+```
+Uh oh. The cataracts list is very small. Seems most of the hospitals don't have any entries for cataracts
+
+### Complete Blood Count
+a blood count is a very commonly ordered blood test
+```{r grep descriptions cbc}
+# a blood count is a very commonly ordered blood test
+cbc <- master_df %>% 
+  filter(str_detect(Description, regex('cbc|complete blood count', ignore_case=TRUE))) #%>%
+  #filter(str_detect(Description, fixed('1000', ignore_case=TRUE)))
+cbc$Item <- "Complete Blood Count with Auto Differential"
+write.csv(cbc, file = "./ProcessedChargeMasterLists/cbc_df.csv", row.names = F)
+```
+
+### Acetamenophin
+acetaminophen (aka Tylenol) is a very commonly administered drug
+```{r grep descriptions acetamenophine}
+# acetaminophen aka Tylenol is a very commonly administered drug
+acetaminophen <- master_df %>%
+  filter(str_detect(Description, regex('acetaminophen|tylenol', ignore_case=TRUE))) %>%
+  filter(str_detect(Description, regex('tab|cap', ignore_case=TRUE)))
+acetaminophen$Item <- "Acetamenophin (325mg Tablet)"
+write.csv(acetaminophen, file = "./ProcessedChargeMasterLists/acetaminophen_df.csv", row.names = F)
+```
+
+Examining these dataframes (as warned in the NLP lab), there are no standardized descriptions used for these items or services.  To continue with this project, to do some analysis of the relation of item pricing to hospital size/location/revenue, we will do manual curation of these lists.
+
+

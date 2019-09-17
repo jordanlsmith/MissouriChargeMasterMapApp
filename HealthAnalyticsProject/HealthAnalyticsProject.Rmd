@@ -1,0 +1,79 @@
+---
+title: "HealthAnalyticsChargemasterProject"
+author: "Jordan Smith"
+date: "2/21/2019"
+output: html_document
+---
+
+Loadlibraries
+
+```{r load libraries}
+library(googlesheets)
+library(tidyverse)
+library(ggmap)
+```
+load hospital_overview_data
+```{r load hospital data}
+hosp_df <- read.csv("MissouriHospitalListChargemasterChecklist - Sheet1.csv", stringsAsFactors = F) %>% slice(1:84)
+```
+
+Separate out zipcode from address, then unite, with comma
+```{r separate zip code}
+hosp_df <- separate(data = hosp_df, col = Address, into = c("Address", "Zip"), sep = -6)
+#print(hosp_df$Zip)
+```
+
+```{r}
+hosp_df$Address <- trimws(x=hosp_df$Address, "right")
+Address1 <- paste0(hosp_df$Address, ",", hosp_df$Zip)
+Address1
+hosp_df$Address <- Address1
+```
+
+Find lat and long for all hospitals, by address
+```{r get geocodes}
+# Loop through the addresses to get the latitude and longitude of each address and add it to the
+# origAddress data frame in new columns lat and lon
+for(i in 1:nrow(hosp_df))
+{
+  # Print("Working...")
+  result <- geocode(hosp_df$Address[i], output = "latlona", source = "google")
+  hosp_df$lon[i] <- as.numeric(result[1])
+  hosp_df$lat[i] <- as.numeric(result[2])
+  hosp_df$geoAddress[i] <- as.character(result[3])
+}
+```
+Write out addresses onlyh
+```{r write address csv}
+hosp_df$Zip <- gsub(pattern = " ", replacement = "", x=hosp_df$Zip)
+hosp_df$Zip <- as.numeric(hosp_df$Zip)
+addresses <- hosp_df %>% select(Address, Zip) %>% separate(col=Address, 
+                                                           into=c("Address","City","State"), sep=",")
+addresses$City <- trimws(x=addresses$City, "left")
+addresses$State <- trimws(x=addresses$State, "both")
+head(addresses)
+str(addresses)
+write.table(addresses, file="hospital_addresses.csv", col.names=FALSE, sep=",")
+#write.csv(addresses, file = "hospital_addresses.csv", row.names = F, col.names = F)
+```
+
+```{r load geocodes}
+geocodes <- read.csv("GeocodeResults (1).csv", header=F)
+```
+
+```{r split lat long into seperate columns}
+geo_sep <- geocodes %>% separate(col = V6, into = c("lat", "long"), sep = ",") %>% select(V2, lat, long)
+colnames(geo_sep) <- c("Address", "lat", "long")
+head(geo_sep)
+write.csv(geo_sep, "Address_GeoCodes.csv", row.names = F)
+```
+
+Join hosp_df to downloaded geocode addresses
+```{r join hosp_df and geocode addresses}
+hosp_geo_df <- full_join(hosp_df, geo_addresses, by = "Address")
+hosp_geo_df <- unique(hosp_geo_df)
+```
+
+```{r}
+write.csv(hosp_geo_df, "Missouri_Hospital_Chargemaster_Info.csv", row.names = F)
+```
